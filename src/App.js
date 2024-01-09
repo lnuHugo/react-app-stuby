@@ -44,7 +44,7 @@ function App() {
     };
 
     try {
-      const response = await fetch("http://localhost:8080/chat", options);
+      const response = await fetch("https://stuby-server.onrender.com/chat", options);
       const data = await response.json();
       setResponse(data.choices[0].message.content);
     } catch (error) {
